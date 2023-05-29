@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <a href="#" class="logo">BRAND</a>
+                <button class="nav-btn"></button>
+                <ul class="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <button class="btn btn-mobile">Contact</button>
+                </ul>
+                <button class="btn">Contact</button>
+            </div>
+        </div>
+    </nav>
+</body>
+
+<script>
+    const navBtn = document.querySelector('.nav-btn');
+    const mainMenu = document.querySelector('.main-menu');
+    const navBar = document.querySelector('.navbar');
+
+    navBtn.addEventListener('click',()=>{
+        navBtn.classList.toggle('active')
+        mainMenu.classList.toggle('active')
+        navBar.classList.toggle('active')
+    })
+</script>
+</html>
